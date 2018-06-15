@@ -1,0 +1,55 @@
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+ul{
+    border-bottom: solid 3px black;
+    background: lightgrey;
+    margin: 0;
+    padding: 20px;
+
+}
+
+#h1{
+    font-size: 4rem;
+}
+
+
+#h2{
+    font-size: 2rem;
+}
+
+#padLi{
+    border: solid 1px black;
+}
+
+[id$=p], p{
+    border:2px solid black;
+    display:inline-block;
+    padding:0.3rem 1.2rem;
+    margin:2rem;
+}
+
+#firstp{
+    width:80%;
+}
+
+#locate, #container, #lists{
+    width:90vw;
+    min-width: 50px;
+    min-height: 50px;
+    height:auto;
+    background: rgb(211, 211, 211);
+    margin:3rem;
+}
+
+
+#locateSmaller{
+    min-width: 50px;
+    min-height: 50px;
+    width:40vw;
+    height:auto;
+    background: lightblue;
+    margin:3rem;
+}
