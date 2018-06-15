@@ -1,10 +1,11 @@
 nav ul li{
     text-decoration: none;
     list-style-type: none;
+    border: solid 1px black;
 
 }
 ul{
-    border-bottom: solid 3px black;
+    border: solid 3px black;
     background: lightgrey;
     margin: 0;
     padding: 20px;
@@ -13,11 +14,13 @@ ul{
 
 #h1{
     font-size: 4rem;
+    border: solid 1px black;
 }
 
 
 #h2{
     font-size: 2rem;
+    border: solid 1px black;
 }
 
 #padLi{
@@ -33,6 +36,7 @@ ul{
 
 #firstp{
     width:80%;
+    border: solid 1px black;
 }
 
 #locate, #container, #lists{
@@ -42,6 +46,7 @@ ul{
     height:auto;
     background: rgb(211, 211, 211);
     margin:3rem;
+    border: solid 1px black;
 }
 
 
@@ -52,4 +57,8 @@ ul{
     height:auto;
     background: lightblue;
     margin:3rem;
+    border: solid 1px black;
 }
+
+#lists{background:red;
+width:30vw;}
