@@ -12,9 +12,10 @@ ul{
 
 }
 
-#h1{
-    font-size: 4rem;
+h1{
+    font-size: 3rem;
     border: solid 1px black;
+    text-align:center;
 }
 
 
@@ -39,26 +40,12 @@ ul{
     border: solid 1px black;
 }
 
-#locate, #container, #lists{
-    width:90vw;
-    min-width: 50px;
-    min-height: 50px;
-    height:auto;
-    background: rgb(211, 211, 211);
-    margin:3rem;
-    border: solid 1px black;
+
+
+
+#list, #holder{
+    height:20vw;
+  
+    /* color: red; */
+    border:1px solid blue;
 }
-
-
-#locateSmaller{
-    min-width: 50px;
-    min-height: 50px;
-    width:40vw;
-    height:auto;
-    background: lightblue;
-    margin:3rem;
-    border: solid 1px black;
-}
-
-#lists{background:red;
-width:30vw;}

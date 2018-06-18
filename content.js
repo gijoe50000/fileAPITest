@@ -1,48 +1,29 @@
-var obj;
 
-this.addEventListener('dragstart', dstartfunc);
+var fileObject = document.getElementById('files');
+var listObject = document.getElementById('list');
+var holderObject = document.getElementById('holder');
+var image;
+fileObject.addEventListener('change', changeFunc);
+var filename=fileObject.name;
+var filesize=fileObject.size;
+var filetype;
+var details;
 
-main.addEventListener('drop', ddrop,);
-main.addEventListener('dragover', dover);
-
-locate.addEventListener('drop', ddrop);
-locate.addEventListener('dragover', dover);
-
-locateSmaller.addEventListener('drop', ddrop);
-locateSmaller.addEventListener('dragover', dover);
-
-container.addEventListener('drop', ddrop);
-container.addEventListener('dragover', dover);
-
-h1.addEventListener('dragover', dover);
-h1.addEventListener('drop',ddrop)
-
-h2.addEventListener('dragover', dover);
-h2.addEventListener('drop',ddrop)
+function changeFunc(e){
+    
+// listObject.textContent=e.target.files;
+// holderObject.textContent=e.target.fileObject;
 
 
+console.log(e.target.files);
 
-function dstartfunc(e){
-    e.stopPropagation();
-    e.dataTransfer.setData('text/html', e.target.id);
+// image=e.target.readAsDataURL(files[0]);
+image=e.target.files[0];
+holderObject.innerHTML="<img src=/"+image+"></img>";
+
+details="Name= <br>"+image.name+ "<br>"+ "Size="+image.size+"kb";
+
+listObject.innerHTML=details;
+// listObject.value=details;
 }
 
-
-function ddrop(e){
-    e.stopPropagation();
-    obj=e.dataTransfer.getData('text/html');
-    this.appendChild(document.getElementById(obj));
-            console.log("this.id= "+this.id);
- 
-
-}
-
-
-function dover(e){
-    e.preventDefault();
-    e.stopPropagation();
-    console.log(this.id);
-    if(this.parentElement.id!=""){ 
-        // console.log(" element: "+this.id);
-    }
-}
